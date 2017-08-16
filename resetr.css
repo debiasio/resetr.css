@@ -1,5 +1,5 @@
 /*!
- * resetr.css v2.0.0
+ * resetr.css v2.1.0
  * MIT License
  * github.com/jbdebiasio/resetr.css
  *
@@ -14,8 +14,9 @@
 
   html {
     box-sizing: border-box;
-    /* All browsers without overlaying scrollbars */
-    /* overflow-y: scroll; */
+    background: white; /* Addition */
+    color: rgba(0, 0, 0, 0.87); /* Addition */
+    font-family: sans-serif; /* Addition */
     font-size: 16px; /* Addition */
     line-height: 1.15; /* Addition */
     -ms-text-size-adjust: 100%; /* Addition */
@@ -25,8 +26,6 @@
   *,
   ::before,
   ::after {
-    /* Set `background-repeat: no-repeat` to all elements and pseudo elements */
-    /* background-repeat: no-repeat; */
     box-sizing: inherit;
   }
 
@@ -45,15 +44,6 @@
   /* # =================================================================
      # General elements
      # ================================================================= */
-
-  /* Addition */
-  body {
-    background: white;
-    color: rgba(0, 0, 0, 0.87);
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.15;
-  }
 
   /* Add the correct display in iOS 4-7.*/
   audio:not([controls]) {
@@ -125,7 +115,6 @@
   }
 
   /* Correct style set to `bold` in Edge 12+, Safari 6.2+, and Chrome 18+ */
-  /* b, */
   strong {
     font-weight: bolder;
   }
@@ -134,11 +123,6 @@
   em {
     font-style: italic;
   }
-
-  /* Address styling not present in Safari and Chrome */
-  /* dfn {
-    font-style: italic;
-  } */
 
   /* Address styling not present in IE 8/9 */
   mark {
@@ -198,20 +182,6 @@
     overflow: auto; /* Internet Explorer 11+ */
     resize: vertical; /* Specify textarea resizability */
   }
-
-  /* Specify font inheritance of form elements */
-  /* button,
-  input,
-  optgroup,
-  select,
-  textarea {
-    font: inherit;
-  } */
-
-  /* Restore the font weight unset by the previous rule. */
-  /* optgroup {
-    font-weight: bold;
-  } */
 
   button {
     overflow: visible; /* Address `overflow` set to `hidden` in IE 8/9/10/11 */
