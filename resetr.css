@@ -1,5 +1,5 @@
 /*!
- * resetr.css v2.1.0
+ * resetr.css v2.2.0
  * MIT License
  * github.com/jbdebiasio/resetr.css
  *
@@ -15,7 +15,7 @@
   html {
     box-sizing: border-box;
     background: white; /* Addition */
-    color: rgba(0, 0, 0, 0.87); /* Addition */
+    color: black; /* Addition */
     font-family: sans-serif; /* Addition */
     font-size: 16px; /* Addition */
     line-height: 1.15; /* Addition */
