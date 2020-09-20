@@ -3,7 +3,7 @@
  * MIT License
  * github.com/jbdebiasio/resetr.css
  *
- * Based on ress.css v1.2.2 and normalize.css v8.0.1
+ * Based on ress v3.0.1 and normalize.css v8.0.1
  * github.com/filipelinhares/ress
  * github.com/necolas/normalize.css
  */
@@ -19,6 +19,9 @@ html {
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.15; /* Correct the line height in all browsers */
+  -moz-tab-size: 4;
+  tab-size: 4;
+  word-break: normal;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS (8+) */
 }
@@ -26,10 +29,10 @@ html {
 *,
 ::before,
 ::after {
+  background-repeat: no-repeat;
   box-sizing: inherit;
 }
 
-/* Inherit `text-decoration` and `vertical-align` to ::before and ::after pseudo elements */
 ::before,
 ::after {
   text-decoration: inherit;
@@ -77,7 +80,6 @@ summary {
   display: list-item;
 }
 
-/* Add the correct font size in all browsers */
 small {
   font-size: 80%;
 }
@@ -94,8 +96,9 @@ small {
 
 abbr[title] {
   border-bottom: none; /* Remove the bottom border in Chrome 57- */
-  text-decoration: underline; /* Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari */
-  text-decoration: underline dotted; /* Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari */
+  /* Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari */
+  text-decoration: underline;
+  text-decoration: underline dotted;
 }
 
 a {
@@ -228,11 +231,12 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
+/* Correct the inability to style clickable types in iOS and Safari */
 button,
 html [type="button"], /* Prevent a WebKit bug where (2) destroys native `audio` and `video`controls in Android 4 */
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; /* Correct the inability to style clickable types in iOS and Safari */
+  -webkit-appearance: button;
 }
 
 /* Remove the inheritance of text transform in Firefox, Edge, and IE */
@@ -283,6 +287,7 @@ legend {
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* Correct the inability to style clickable types in iOS and Safari */
+  color: inherit;
   font: inherit; /* Change font properties to `inherit` in Chrome and Safari */
 }
 
@@ -295,7 +300,7 @@ legend {
     # Specify media element style
     # ================================================================= */
 
-/* Remove the border on images inside links in IE 10 */
+/* Remove the border on images inside links in IE 8/9/10 */
 img {
   border-style: none;
 }
@@ -353,22 +358,4 @@ video {
 /* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
 [aria-disabled] {
   cursor: default;
-}
-
-/*  # =================================================================
-    # Selection
-    # ================================================================= */
-
-/* Specify text selection background color and omit drop shadow */
-
-::-moz-selection {
-  background-color: #b3d4fc; /* Required when declaring ::selection */
-  color: #000;
-  text-shadow: none;
-}
-
-::selection {
-  background-color: #b3d4fc; /* Required when declaring ::selection */
-  color: #000;
-  text-shadow: none;
 }
