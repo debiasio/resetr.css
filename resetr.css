@@ -161,6 +161,11 @@ input {
   border-radius: 0;
 }
 
+/* Custom in resetr.css */
+button {
+  touch-action: manipulation;
+}
+
 /* Apply cursor pointer to button elements */
 button,
 [type="button"],
