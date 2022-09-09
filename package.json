@@ -3,7 +3,7 @@
   "version": "4.1.0",
   "description": "A CSS resetr",
   "main": "resetr.css",
-  "repository": "github:jbdebiasio/resetr.css",
-  "author": "jbdebiasio",
+  "repository": "github:debiasio/resetr.css",
+  "author": "debiasio",
   "license": "MIT"
 }
