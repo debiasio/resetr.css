@@ -1,7 +1,5 @@
 # resetr.css
 
-> A CSS resetr
-
 ## Installation
 
 ### Add dependency

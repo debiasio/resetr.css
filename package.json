@@ -1,7 +1,9 @@
 {
   "name": "resetr.css",
-  "version": "4.1.0",
-  "description": "A CSS resetr",
+  "version": "4.1.1",
+  "scripts": {
+    "postversion": "git push --follow-tags"
+  },
   "main": "resetr.css",
   "repository": "github:debiasio/resetr.css",
   "author": "debiasio",
